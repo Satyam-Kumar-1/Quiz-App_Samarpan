@@ -9,22 +9,22 @@
 </head>
 <body>
      <!-- start Quiz button -->
-     <div class="start_btn"><button>Start Quiz</button></div>
+     <div id="start_btn"  onclick="startt()"><button>Start Quiz</button></div>
 
 
      <!-- details -->
-     <div id="student_details">
+     <div class="student_details" id="details">
          <form action="">
              <div>
             Name: <input type="text" name="" id=""></div>
            <div>  Email: <input type="email" name="" id=""></div>
             <div> Phone: <input type="number" name="" id=""></div>
          </form>
-         <div class="continue_btn"><button>Continue</button></div>
+         <div class="continue_btn" onclick="continuee()" ><button >Continue</button></div>
      </div>
 
      <!-- Info Box -->
-     <div class="info_box">
+     <div class="info_box" id="info">
          <div class="info-title"><span>Some Rules of this Quiz</span></div>
          <div class="info-list">
              <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
@@ -33,9 +33,10 @@
              <div class="info">4. You can't exit from the Quiz while you're playing.</div>
              <div class="info">5. You'll get points on the basis of your correct answers.</div>
          </div>
-         <div class="start"><button>Start</button></div>
+         <div class="start" onclick="quizStart()"><button>Start</button></div>
+     </div>
         <!-- question -->
-    <div class="container">
+    <div class="container" id="cont">
         <div class="cont1" id="noOfQndisplay">
             <p ></p><span id="currentQnNo">1</span><span>/</span><span id="totalQn">10</span></p>
         </div>
@@ -56,23 +57,25 @@
            
 
         </div>
-        <div class="cont5" id="buttn2">
+        <div class="cont5" id="buttn2" onclick="submitt()">
             <input id="submitbtn" type="button" value="submit">
-
+           
         </div>
+    </div> 
         <!-- score page -->
+    <div class="score" id="score1">
         <div id="score_cont">
             <p>Your Score</p>
             <p ></p><span id="yourscore">1</span><span>/</span><span id="totalmarks">10</span></p>
 
         </div>
-        <div class="" id="">
-            <input id="restart" type="button" value="Restart">
+        <div class="last" id="quit" onclick="quitt()">
+            <!-- <input id="restart" type="button" value="Restart"> -->
             <input id="quit" type="button" value="Quit">
            
 
         </div>
-    </div>
+    </div>  
     <script src="quiz.js"></script>
     <script src="questions.js"></script>
 </body>
