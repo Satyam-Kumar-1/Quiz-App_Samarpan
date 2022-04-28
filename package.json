@@ -1,0 +1,24 @@
+{
+  "name": "quiz-app_samarpan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "questions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam-Kumar-1/Quiz-App_Samarpan.git"
+  },
+  "author": "Satyam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyam-Kumar-1/Quiz-App_Samarpan/issues"
+  },
+  "homepage": "https://github.com/Satyam-Kumar-1/Quiz-App_Samarpan#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
