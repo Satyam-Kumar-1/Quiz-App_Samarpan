@@ -5,6 +5,7 @@ const app=express()
 const port = process.env.PORT || 3000
 require("./connect")
 const Register=require("./register")
+const Detail=require("./details")
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
@@ -68,7 +69,7 @@ app.post("/login", async(req,res)=>{
     console.log(useremail.password)
     if(useremail.password===password){
       app.use(express.static(__dirname));
-      res.sendFile(__dirname + "/index.html");
+      res.sendFile(__dirname + "/main.html");
 
       // res.status(201).render("index");
      // res.send("login successfull")

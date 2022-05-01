@@ -3,5 +3,6 @@ const db='mongodb+srv://satyamkrsatyam1:Satyam123@cluster0.oxfvk.mongodb.net/Reg
 mongoose.connect(db).then(() => {
     console.log('connection successful');
 }).catch((error)=>{
+    //console.log(error)
     console.log('No connection');
 })
