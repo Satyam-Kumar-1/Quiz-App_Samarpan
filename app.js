@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:false}));
 //app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/registration.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/register",async(req,res) =>{
