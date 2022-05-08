@@ -17,3 +17,9 @@
 .display1{
     display: none;
 }
+
+.logoutLblPos{
+
+    position:fixed;
+    right:10px;
+    top:5px;}

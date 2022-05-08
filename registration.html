@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form action="/" method="post">
+        <div id="fname">
+            First Name: <input type="text" name="firstname" id="firstname">
+        </div>
+        <div id="Lname">
+            Last Name: <input type="text" name="lastname" id="lastname">
+        </div>
+        <div id="email">
+            email: <input type="email" name="email" id="email">
+        </div>
+        <div id="Mob">
+            Mob <input type="number" name="phone" minlength="10" maxlength="10" id="mobno">
+        </div>
+        <div id="pass">
+            Password: <input type="password" name="password" id="">
+        </div>
+        <div id="cpass">
+            confirm password <input type="password" name="cpassword" id="">
+        </div>
+        <input type="submit" value="submit" onclick="validateform()">
+    </form>
+    <a href="/login.html">already have an account</a>
+
+
+
+
+
+<script>
+    
+    
+    function validateform(){
+
+        var firstname= document.getElementById("firstname");
+        var laststname= document.getElementById("lastname");
+        var Mobno= document.getElementById("mobno");
+        var email= document.getElementById("email");
+        
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+        if(firstname.value==""){
+            alert("Please Enter your First name");
+    }   
+            else if(!(isNaN(name.value))){
+                alert("Please Enter Valid Name");
+    }
+      
+    
+        else if(email.value==""){
+            alert("Please Enter your Email Id");
+    }
+            else if((!is(email.value.match(mailformat)))){
+                alert("Please Enter Valid mail");
+        }
+        else if(Mobno.value==""){
+            ("Please Enter your Mobile Number ");
+    }
+        // else if((isNaN(Mobno.value))||(Mobno.value==0000000000)||(!is(Mobno.value.match(phoneNum)))){
+            else if(!(Mobno.value.match(phoneNum))){
+                alert("Please Enter Valid Mobile Number");}
+    
+}
+    
+</script>
+</body>
+
+</html>

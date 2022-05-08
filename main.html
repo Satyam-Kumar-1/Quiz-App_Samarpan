@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="quiz.css">
+   
 </head>
 <body>
 <!-- <div id="authentication">
@@ -25,8 +26,14 @@
     </div>
     
 </div> -->
+<!-- <div id="name1">first name</div>
+<div id="name2">last name</div> -->
 
-
+<form align="right" name="form1" method="get" action="/quiz">
+    <label class="logoutLblPos">
+    <input name="submit2" type="submit" id="submit2" value="Log out">
+    </label>
+  </form>
 
 
      <!-- start Quiz button -->
@@ -34,16 +41,16 @@
 
 
      <!-- details -->
-     <div class="student_details" id="details">
-         <form action="" method="post">
+      <div class="student_details" id="details">
+         <form action="/quizz" method="post">
              <div>
             Name: <input type="text" name="name" id=""></div>
-           <div>  Email: <input type="email" name="emailId" id=""></div>
+           <div>  Email: <input type="email" name="emailIdd" id="eml"></div>
             <div> Phone: <input type="number" name="MobNo" id=""></div>
-            <input type="button" class="continue_btn" onclick="continuee()" value="Continue">
+            <input type="submit" class="continue_btn"  onclick="continuee()" value="Continue">
         </form>
-         <!-- <div class="continue_btn" onclick="continuee()" ><button >Continue</button></div> -->
-        
+         <div class="continue_btn" onclick="continuee()" ><button >Continue</button></div> 
+         
      </div>
 
      <!-- Info Box -->
@@ -60,35 +67,134 @@
      </div>
         <!-- question -->
     <div class="container" id="cont">
-        <div class="cont1" id="noOfQndisplay">
+        <!-- <div class="cont1" id="noOfQndisplay">
             <p ></p><span id="currentQnNo">1</span><span>/</span><span id="totalQn">10</span></p>
         </div>
         <div class="cont2" id="Qndisplay">
            <p id="question">Where is the capital of Bihar?</p> 
         </div>
-        <div class="cont3" id="optiondisplay">
-            <div  > <input type="radio"  name="opt" value="option1">
+        <div class="cont3" id="optiondisplay"> 
+             <ul>
+                <li>
+                    <input type="radio" name="opt" id="option1" class="answer" value="">
+                    <label for="option1" id="option1_txt">Answer1</label>
+                  </li>
+                <li>
+                    <input type="radio" name="opt" id="option2" class="answer">
+                    <label for="option2" id="option2_txt">Answer1</label>
+                  </li>
+                <li>
+                    <input type="radio" name="opt" id="option3" class="answer">
+                    <label for="option3" id="option3_txt">Answer1</label>
+                  </li>
+                <li>
+                    <input type="radio" name="opt" id="option4" class="answer">
+                    <label for="option4" id="option4_txt">Answer1</label>
+                  </li>
+            </ul>  -->
+            <!-- <div  > <input type="radio"  name="opt" value="option1"> 
                 
-         <label for="option1" id="option1">Ranchi</label></div>
-            <div ><input type="radio"  name="opt" value="option1">
+          <label for="option1" id="option1">Ranchi</label></div>
+            <div ><input type="radio"  name="opt" value="option2">
                 
          <label for="option2" id="option2">Patna</label></div>
-            <div ><input type="radio"  name="opt" value="option1">
+            <div ><input type="radio"  name="opt" value="option3">
                 
          <label for="option3" id="option3">SriNagar</label></div>
-            <div ><input type="radio"  name="opt" value="option1">
+            <div ><input type="radio"  name="opt" value="option4">
                 
          <label for="option4" id="option4">Lucknow</label></div>
+        </div>  -->
+ 
+          <div id="qn1">
+           1. Where is the capital of Bihar? <br>
+            <input type="radio" name="question1" id="">Ranchi <br>
+            <input type="radio" name="question1" id="answer1" value="Patna">Patna <br>
+            <input type="radio" name="question1" id="">SriNagar <br>
+            <input type="radio" name="question1" id="">Lucknow <br>
 
+         </div><br>
+         <div id="qn2">
+           2. Where is the president of India?<br>
+            <input type="radio" name="question2" id="">Narendra Modi <br>
+            <input type="radio" name="question2" id="">Amit Shah <br>
+            <input type="radio" name="question2" id="answer2">Ramnath Covind <br>
+            <input type="radio" name="question2" id=""> Mira Kumar<br>
 
-        </div>
-        <div class="cont4" id="buttn1">
+         </div><br>
+         <div id="qn3">
+           3. Garampani sanctuary is located at<br>
+            <input type="radio" name="question3" id="answer3">Diphu,Assam <br>
+            <input type="radio" name="question3" id="">Junagarh, Gujarat <br>
+            <input type="radio" name="question3" id="">Gangtok,Sikkim <br>
+            <input type="radio" name="question3" id="">Kohima, Nagaland<br>
+
+         </div><br>
+         <div id="qn4">
+            4. Which Article ensured the special status to Jammu & Kashmir prior to 2019?<br>
+            <input type="radio" name="question4" id="">Article 372 <br>
+            <input type="radio" name="question4" id="answer4">Article 370 <br>
+            <input type="radio" name="question4" id="">Article 375 <br>
+            <input type="radio" name="question4" id="">Article 378 <br>
+
+         </div><br>
+         <div id="qn5">
+          5. Which of the following is a nonmetal that remains liquid at room temperature?<br>
+            <input type="radio" name="question5" id="">P <br>
+            <input type="radio" name="question5" id="answer5">Br <br>
+            <input type="radio" name="question5" id="">Cl <br>
+            <input type="radio" name="question5" id="">He<br>
+
+         </div><br>
+         <div id="qn6">
+           6. The members of Rajya Sabha are elected by <br>
+            <input type="radio" name="question6" id="">the people <br>
+            <input type="radio" name="question6" id="">loksabha <br>
+            <input type="radio" name="question6" id="answer6">elected members of legislative assembly <br>
+            <input type="radio" name="question6" id="">elected members of legislative council <br>
+
+         </div><br>
+         <div id="qn7">
+            7. Where is the capital of Bihar?<br>
+            <input type="radio" name="question7" id="">Ranchi <br>
+            <input type="radio" name="question7" id="answer7">Patna <br>
+            <input type="radio" name="question7" id="">SriNagar <br>
+            <input type="radio" name="question7" id="">Lucknow <br>
+
+         </div><br>
+         <div id="qn8">
+           8. The power to decide an election petition is vested in the<br>
+            <input type="radio" name="question8" id="">Parliament <br>
+            <input type="radio" name="question8" id="">Supreme court <br>
+            <input type="radio" name="question8" id="answer8">High court <br>
+            <input type="radio" name="question8" id="">Election commission <br>
+
+         </div><br>
+         <div id="qn9">
+           9. Where is the capital of Assam?<br>
+            <input type="radio" name="question9" id="">Mumbai <br>
+            <input type="radio" name="question9" id="">Patna <br>
+            <input type="radio" name="question9" id="answer9">Dishpur <br>
+            <input type="radio" name="question9" id="">Gangtok <br>
+
+         </div><br>
+         <div id="qn10">
+           10. Who is the governer  of RBI?<br>
+            <input type="radio" name="question10" id="answer10">Shaktikanta Das <br>
+            <input type="radio" name="question10" id="">Raghuram G Rajan <br>
+            <input type="radio" name="question10" id="">Manmohan Singh <br>
+            <input type="radio" name="question10" id="">Urjit Patel <br>
+
+         </div><br>
+         
+          
+        <!-- <div class="cont4" id="buttn1">
             <input id="prevbtn" type="button" value="prev."  onclick="previous()">
-            <input id="nextbtn" type="button" value="next" onclick="nextt()">
+            <input id="nextbtn" type="button" value="next" onclick="nextt();clearsection()">
            
 
-        </div>
-        <div class="cont5" id="buttn2" onclick="submitt()">
+        </div> -->
+        <div class="cont5" id="buttn2" onclick="submitt()" >
             <input id="submitbtn" type="button" value="submit">
            
         </div>
@@ -97,7 +203,7 @@
     <div class="score" id="score1">
         <div id="score_cont">
             <p>Your Score</p>
-            <p ></p><span id="yourscore">1</span><span>/</span><span id="totalmarks">10</span></p>
+            <p ></p><span id="yourscore">--</span><span>/</span><span id="totalmarks">10</span></p>
 
         </div>
         <div class="last" id="quit" onclick="quitt()">
@@ -108,6 +214,22 @@
         </div>
     </div>  
     <script src="quiz.js"></script>
+    
     <script src="questions.js"></script>
+
+    <!-- tab change detector -->
+    <script>
+        var c=0;
+    document.addEventListener("visibilitychange",function() {
+  //document.title=document.visibilityState;
+    console.log(document.visibilityState);
+    if(document.visibilityState=="hidden"){
+        c++;
+    }
+
+        
+    // console.log(c)
+})
+    </script>
 </body>
 </html>

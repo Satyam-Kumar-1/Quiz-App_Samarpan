@@ -5,9 +5,9 @@ const detailsSchema= new mongoose.Schema({
         type: String,
         required: true
     },
-    emailId:{
+    emailIdd:{
         type: String,
-       required: true,
+        required: true,
         unique: true
     },
     MobNo:{
@@ -17,5 +17,5 @@ const detailsSchema= new mongoose.Schema({
     }
 
 })
-const Detail= new mongoose.model("Detail",detailsSchema)
+const Detail= new mongoose.model("Detail",detailsSchema);
 module.exports=Detail;
